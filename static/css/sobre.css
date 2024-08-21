@@ -1,0 +1,126 @@
+/* Estilos básicos para o body e html */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Estilos para o main */
+main {
+    display: flex;
+    /* Justify-content e align-items foram removidos para manter a correspondência com o CSS1 */
+    padding: 2em;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+/* Estilos para o texto-1 */
+.texto-1 {
+    display: flex;
+    flex-direction: row; /* Mantém a direção das colunas */
+    font-size: 1.2em;
+    text-align: left;
+    border-radius: 2em;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.452);
+    width: 60%; /* Altere de 100% para 60% */
+    height: 60%; /* Adicione essa linha para altura */
+    padding: 5em;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.texto-1 h1 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.texto-1 article {
+    margin: 0px 5em 1px 5em; /* Altere o margin para corresponder ao CSS1 */
+}
+
+.texto-1 button {
+    cursor: pointer;
+    border: 1px; /* Altere o border para 1px */
+    background-color: rgba(90, 24, 87, 0);
+    z-index: 1000;
+    position: relative;
+}
+
+.texto-1 p {
+    font-size: 1.2em;
+    line-height: 1.7em;
+}
+
+/* Estilos para artigos ocultos */
+.artigo-2, .artigo-3 {
+    display: none;
+}
+
+/* Posicionamento dos botões para telas maiores */
+.button-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.button-container:first-of-type {
+    left: 1em;
+}
+
+.button-container:last-of-type {
+    right: 1em;
+}
+
+/* Media Query para telas com largura máxima de 449px */
+@media (max-width: 449px) {
+    .texto-1 {
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+        padding-bottom: 4em;
+        font-size: 0.9em;
+        position: relative;
+        width: 100%; /* Ajuste para manter a responsividade em telas menores */
+        height: auto; /* Ajuste para manter a responsividade em telas menores */
+    }
+
+    .texto-1 article {
+        margin: 1em 0;
+    }
+
+    .texto-1 h1 {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    .texto-1 p {
+        font-size: 1em;
+        line-height: 1.4em;
+    }
+
+    .button-container {
+        position: static;
+        transform: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+    }
+
+    .button-container:first-of-type,
+    .button-container:last-of-type {
+        position: static;
+    }
+
+    .texto-1 button {
+        display: inline-block;
+        width: auto;
+        margin: 0 0.5em;
+    }
+
+    .texto-1 button img {
+        width: 20px;
+        height: auto;
+    }
+}

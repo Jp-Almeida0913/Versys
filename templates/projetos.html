@@ -1,0 +1,32 @@
+{% extends "navbar.html" %}
+
+{% block content %}
+<main>
+    <section class="card">
+        <figure>
+            <img src="./static/img/tst1.png" alt="Descrição da Imagem" width="300">
+        </figure>
+
+        <article>
+            <p>Trata-se de um sistema de serviços de entrega separado que funciona em 3 módulos</p>
+            <h2>Aplicação do Cliente</h2>
+            <p>Permite fazer registro e login, e permitirá realizar pedidos, acompanhar e verificar histórico.</p>
+            <h2>Aplicação do Motoboy</h2>
+            <p>Irá notificar sobre os pedidos feitos pelos clientes, utilizando tecnologia de geolocalização, e receberá as informações pertinentes para a realização do serviço.</p>
+            <h2>Aplicação Desktop</h2>
+            <p>Irá servir como o sistema que gerencia os outros dois apps, permitindo ao usuário ter acesso ao histórico de serviços e poder editar as regras para o cálculo do frete.</p>
+        </article>
+        
+        <a href="/manual"><button>Saiba mais</button></a>
+        
+    </section>
+</main>
+
+<style>
+    main,html,body{
+        overflow-y: hidden;
+    }
+</style>
+
+
+{% endblock %}

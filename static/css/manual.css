@@ -1,0 +1,113 @@
+/* Estilos básicos para telas maiores */
+.manual {
+  width: 80%;
+  min-height: 0;
+  border-radius: 2em;
+  box-shadow: 1px 6px 25px 12px rgba(79, 13, 79, 1);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto; /* Centraliza o container na tela */
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.manual h1 {
+  font-size: 2em;
+}
+
+.manual section {
+  display: flex;
+  flex-direction: column;
+}
+
+.manual p {
+  width: 50%;
+  font-size: 1.4em;
+  text-align: start;
+}
+
+.manual section h1 {
+  font-size: 1.7em;
+}
+
+.manual section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os elementos dentro dos artigos */
+}
+
+
+.manual img{
+  width: 900px;
+  height: 500px;
+  transition: transform 1s ease-in-out;
+}
+
+.manual img:hover{
+  transform: scale(1.1);
+}
+
+/* Responsividade para telas menores ou iguais a 450px */
+@media (max-width: 450px) {
+  .manual {
+    width: 95%; /* Ajusta a largura para telas menores */
+    border-radius: 1em; /* Diminui o border-radius */
+    box-shadow: 1px 3px 15px rgba(79, 13, 79, 0.5); /* Ajusta o box-shadow */
+    padding: 1em; /* Ajusta o padding para telas menores */
+  }
+
+  .manual h1 {
+    font-size: 1.5em; /* Diminui o tamanho da fonte dos títulos */
+  }
+
+  .manual section {
+    align-items: center; /* Mantém o alinhamento centralizado */
+  }
+
+  .manual p {
+    width: 35%; /* Ajusta a largura do texto */
+    font-size: 1.2em; /* Diminui o tamanho da fonte do parágrafo */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 1em; /* Adiciona espaçamento inferior */
+    text-align: start;
+  }
+
+  .manual section h1 {
+    font-size: 1.3em; /* Diminui o tamanho da fonte dos subtítulos */
+  }
+
+  /* Estilo para botões */
+  .manual button {
+    width: 100%; /* Ajusta a largura do botão */
+    padding: 0.8em; /* Ajusta o padding do botão */
+    font-size: 1em; /* Ajusta o tamanho da fonte do botão */
+    border-radius: 0.5em; /* Ajusta o border-radius do botão */
+    margin-top: 1em; /* Adiciona margem superior ao botão */
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total */
+  }
+
+  /* Ajuste dos espaçamentos e alinhamento dos elementos */
+  .manual article, .manual section {
+    padding: 0; /* Remove padding extra */
+    margin: 0; /* Remove margin extra */
+  }
+
+  /* Ajusta a exibição do cabeçalho e dos artigos */
+  .manual header {
+    text-align: center; /* Centraliza o texto no cabeçalho */
+  }
+
+  .manual article h1 {
+    font-size: 1.5em; /* Ajusta o tamanho do título no artigo */
+  }
+
+  /* Ajuste para seções com grandes blocos de texto */
+  .manual section {
+    margin-bottom: 2em; /* Adiciona espaçamento inferior entre seções */
+  }
+  main,html,body{
+    overflow-y: scroll;
+}
+
+}
