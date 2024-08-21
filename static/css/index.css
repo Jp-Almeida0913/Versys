@@ -1,0 +1,53 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.main-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.texto-principal {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.452);
+    width: 100%; /* Garante que a caixa ocupe 100% da largura da tela */
+    padding: 2em;
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total */
+    margin: 0; /* Remove margens extras */
+}
+
+/* Responsividade para telas menores que 450px */
+@media (max-width: 450px) {
+    .main-index {
+        height: auto;
+        padding: 0px;
+    }
+
+    .texto-principal {
+        font-size: 1em;
+        padding: 1.5em;
+    }
+
+    .texto-principal h1 {
+        font-size: 1.4em;
+    }
+
+    .texto-principal h2 {
+        font-size: 1.2em;
+    }
+
+    .main-index, html, body {
+        overflow-y: hidden;
+    }
+}

@@ -1,0 +1,34 @@
+{% extends "navbar.html" %}
+{% block content %}
+<main>
+    <section class="texto-1" id="textos">
+        <div class="button-container">
+            <button id="btn1" onclick="console.log('btn1 clicked')"><img src="./static/img/icons/seta-esquerda.png" alt=""></button>
+        </div>
+        <article class="artigo-1">
+            <h1>Missão</h1>
+            <p>Oferecemos soluções sob medida para empresas de todos os portes, com um foco constante em inovação e o uso das mais avançadas ferramentas tecnológicas. Nosso compromisso é transformar desafios em oportunidades, desenvolvendo estratégias que impulsionam o crescimento e a eficiência dos nossos clientes. Com uma visão aguçada para as tendências emergentes e uma abordagem proativa, asseguramos que cada projeto não apenas atenda, mas supere as expectativas, mantendo-nos sempre à frente no mercado competitivo.</p>
+        </article>
+        <article class="artigo-2">
+            <h1>Visão</h1>
+            <p>Nosso objetivo é atender plenamente às necessidades dos nossos clientes, oferecendo produtos de alta qualidade que sejam simples de implementar e usar. Com um compromisso firme com a excelência e a simplicidade, garantimos que cada solução seja prática e eficiente, proporcionando uma experiência fluida e satisfatória. Estamos dedicados a superar expectativas, entregando produtos que realmente impactam positivamente o dia a dia dos nossos clientes.
+</p>
+        </article>
+        <article class="artigo-3">
+            <h1>Valor</h1>
+            <p>Empregamos tecnologia de ponta para garantir o melhor em nossos produtos! Com um compromisso inabalável com a inovação, asseguramos que cada lançamento incorpore as soluções tecnológicas mais avançadas, oferecendo desempenho superior e uma experiência incomparável. Nossa dedicação em estar na vanguarda da tecnologia garante que nossos produtos não apenas atendam, mas superem as expectativas dos clientes, estabelecendo novos padrões de qualidade e eficiência.</p>
+        </article>
+        <div class="button-container">
+            <button id="btn2" onclick="console.log('btn2 clicked')"><img src="./static/img/icons/seta-direita.png" alt=""></button>
+        </div>
+    </section>
+</main>
+
+<script src="./static/scripts/script.js"></script>
+
+<style>
+    main,html,body{
+        overflow-y: hidden;
+    }
+</style>
+{% endblock %}
