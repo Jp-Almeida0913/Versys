@@ -1,0 +1,131 @@
+/* Estilos básicos para todos os tamanhos de tela */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    padding: 1em;
+    min-height: 100vh;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    text-align: left;
+    border-radius: 2em;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.452);
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 35%;
+    height: 65%;
+    padding: 5em;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card p {
+    font-size: 1.07em;
+    margin: 0.5em 0;
+}
+
+.card h2 {
+    text-align: center;
+    font-size: 1.3em;
+    margin: 0.5em 0;
+}
+
+button {
+    padding: 1.2em;
+    border-radius: 2em;
+    border: 1px;
+    background-color: rgb(67, 5, 124);
+    color: white;
+    font-size: 0.95em;
+    cursor: pointer;
+    transition: transform 0.2s ease-in;
+    margin-top: 1em;
+    width: auto;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* Para telas de dispositivos móveis pequenas (máx. 450px) */
+@media (max-width: 451px) {
+    main {
+        padding: 0.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        padding: 1em;
+        margin: 0;
+        border-radius: 0.8em;
+        height: auto;
+        background-color: rgba(2, 2, 2, 0.295);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: none;
+        position: absolute;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+
+    .card p {
+        font-size: 0.7em;
+        margin-bottom: 0.6em;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .card h2 {
+        font-size: 0.9em;
+        margin-top: 0.6em;
+        margin-bottom: 0.3em;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    button {
+        padding: 0.5em 1em;
+        font-size: 0.8em;
+        background-color: #5800fc;
+        width: 100%;
+        transition: none;
+        display: block;
+        border-radius: 0.5em;
+    }
+
+    button:hover {
+        transform: none;
+    }
+
+    .card figure {
+        margin: 0 0 1em 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card img {
+        width: 50%;
+        height: auto;
+    }
+}
